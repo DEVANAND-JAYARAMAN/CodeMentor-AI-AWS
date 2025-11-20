@@ -2,7 +2,6 @@
 
 <div align="center">
 
-![AI Chatbot](https://img.shields.io/badge/AI%20Chatbot-Amazon%20Bedrock-4285f4?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 <p align="center">
   <img src="https://img.shields.io/badge/AWS-Lambda-FF9900?style=flat&logo=aws-lambda&logoColor=white" />
@@ -28,7 +27,24 @@
 
 ## 🏗️ Architecture Overview
 
-![Architecture Diagram](https://via.placeholder.com/800x400/f8f9fa/333333?text=Serverless+AI+Chatbot+Architecture)
+## 🏗️ AWS Architecture
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   AWS Amplify   │    │  Amazon S3      │    │  API Gateway    │
+│   (CI/CD +      │    │  (Static        │    │  (REST API +    │
+│    Hosting)     │    │   Assets)       │    │    CORS)        │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+         │                       │                       │
+         └───────────────────────┼───────────────────────┘
+                                 │
+         ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+         │   AWS Lambda    │    │  Amazon Bedrock │    │      IAM        │
+         │  (Python 3.14)  │───▶│  (Titan LLM)   │     │  (Roles &        │
+         │   Function      │    │                 │    │ Permissions)    │
+         └─────────────────┘    └─────────────────┘    └─────────────────┘
+```
+
 
 The chatbot follows a serverless architecture pattern using AWS managed services:
 
@@ -226,8 +242,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 **⭐ Star this repo if it helped you learn programming!**
 
-[![GitHub Stars](https://img.shields.io/github/stars/julien-muke/bedrock-chatbot?style=social)](https://github.com/julien-muke/bedrock-chatbot)
-
 *Built with ❤️ using AWS serverless technologies*
+
+**Copyright © 2025 Dev Anand Jayaraman. All rights reserved.**
+
+
 
 </div>
