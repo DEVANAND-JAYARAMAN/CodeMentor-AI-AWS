@@ -42,6 +42,9 @@
          │  (Python 3.12)  │───▶│  (Titan LLM)    │    │  (Roles &       │
          │   Function      │    │                 │    │ Permissions)    │
          └─────────────────┘    └─────────────────┘    └─────────────────┘
+
+<img width="1280" height="562" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/c8ea20fb-2733-4eef-93de-3f68e588cfcb" />
+
 ```
 
 ## 🛠️ Tech Stack
@@ -216,5 +219,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 [![GitHub Stars](https://img.shields.io/github/stars/julien-muke/bedrock-chatbot?style=social)](https://github.com/julien-muke/bedrock-chatbot)
 
 *Built with ❤️ using AWS serverless technologies*
+
+**Copyright © 2025 Dev Anand Jayaraman. All rights reserved.**
+
 
 </div>
